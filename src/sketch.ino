@@ -31,23 +31,23 @@ void loop()
     digitalWrite(LED_PIN, LOW);
     delay(900);
     String byte = "";
-    char nextChar;
+    int nextChar;
     //read all the pins, in order
-    nextChar = char(digitalRead(INPUT_PIN_0));
+    nextChar = digitalRead(INPUT_PIN_0);
     byte = byte + nextChar;
-    nextChar = char(digitalRead(INPUT_PIN_1));
+    nextChar = digitalRead(INPUT_PIN_1);
     byte = byte + nextChar;
-    nextChar = char(digitalRead(INPUT_PIN_2));
+    nextChar = digitalRead(INPUT_PIN_2);
     byte = byte + nextChar;
-    nextChar = char(digitalRead(INPUT_PIN_3));
+    nextChar = digitalRead(INPUT_PIN_3);
     byte = byte + nextChar;
-    nextChar = char(digitalRead(INPUT_PIN_4));
+    nextChar = digitalRead(INPUT_PIN_4);
     byte = byte + nextChar;
-    nextChar = char(digitalRead(INPUT_PIN_5));
+    nextChar = digitalRead(INPUT_PIN_5);
     byte = byte + nextChar;
-    nextChar = char(digitalRead(INPUT_PIN_6));
+    nextChar = digitalRead(INPUT_PIN_6);
     byte = byte + nextChar;
-    nextChar = char(digitalRead(INPUT_PIN_7));
+    nextChar = digitalRead(INPUT_PIN_7);
     byte = byte + nextChar;
     //print line to serial port
     Serial.println(byte);
