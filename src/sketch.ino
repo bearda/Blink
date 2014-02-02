@@ -30,7 +30,7 @@ void loop()
     delay(100);
     digitalWrite(LED_PIN, LOW);
     delay(900);
-    String byte;
+    String byte = "";
     char nextChar;
     //read all the pins, in order
     nextChar = char(digitalRead(INPUT_PIN_0));
