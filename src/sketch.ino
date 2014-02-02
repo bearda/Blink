@@ -7,7 +7,7 @@ void setup()
     //I just made a change
     pinMode(LED_PIN, OUTPUT);
     Serial.begin(9600);
-    pinmode(INPUT_PIN,INPUT);
+    pinMode(INPUT_PIN,INPUT);
 }
 
 void loop()
